@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.user.kakaotalk.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#114370">
+
+        <Button
+            android:id="@+id/listButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/friend"/>
+        <LinearLayout
+            android:layout_width="15dp"
+            android:layout_height="0dp"></LinearLayout>
+        <Button
+            android:id="@+id/chatButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/chat"/>
+        <LinearLayout
+            android:layout_width="15dp"
+            android:layout_height="0dp"></LinearLayout>
+        <Button
+            android:id="@+id/settingButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/listimage"/>
+    </LinearLayout>
+
+
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.example.user.kakaotalk.Fragment1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>
